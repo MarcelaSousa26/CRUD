@@ -25,10 +25,10 @@ class ProductController extends Controller
         ]);
         $data = Product::create($validation);
         if ($data) {
-            session()->flash('success', 'Product Add Successfully');
+            session()->flash('success', 'Produto adicionado com sucesso!');
             return redirect(route('admin/products'));
         } else {
-            session()->flash('error', 'Some problem occure');
+            session()->flash('error', 'Algum problema ocorreu!');
             return redirect(route('admin.products/create'));
         }
     }
@@ -43,11 +43,11 @@ class ProductController extends Controller
     {
         $products = Product::findOrFail($id)->delete();
         if ($products) {
-            session()->flash('success', 'Product Deleted Successfully');
-            return redirect(route('admin/products/'));
+            session()->flash('success', 'Produto deletado com sucesso!');
+            return redirect(route('admin/products'));
         } else {
-            session()->flash('error', 'Product Not Delete successfully');
-            return redirect(route('admin/products/'));
+            session()->flash('error', 'Produto não deletado');
+            return redirect(route('admin/products'));
         }
     }
 
@@ -63,10 +63,10 @@ class ProductController extends Controller
         $products->price = $price;
         $data = $products->save();
         if ($data) {
-            session()->flash('success', 'Product Update Successfully');
+            session()->flash('success', 'Produto atualizada com sucesso!');
             return redirect(route('admin/products'));
         } else {
-            session()->flash('error', 'Some problem occure');
+            session()->flash('error', 'Algum problema ocorreu!');
             return redirect(route('admin/products/update'));
         }
     }
