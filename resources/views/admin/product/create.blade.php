@@ -48,10 +48,10 @@
                         <div class="row">
                             <div class="d-flex align-items-center justify-content-center">
                                 <p>
-                                    <a href="{{ route('admin/products') }}" class="btn btn-danger me-2">Voltar</a>
+                                    <a href="{{ route('admin/products') }}" class="bg-trevoso hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-2" style="text-decoration: none;">Voltar</a>
                                 </p>
                                 <p>
-                                    <button class="btn btn-primary">Adicionar</button>
+                                    <button class="btn btn-info text-white h-9 d-flex items-center">Adicionar</button>
                                 </p>
                             </div>
                         </div>

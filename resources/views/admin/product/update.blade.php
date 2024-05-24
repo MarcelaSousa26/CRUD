@@ -44,10 +44,10 @@
                         <div class="row">
                             <div class="d-flex align-items-center justify-content-center">
                                 <p>
-                                    <a href="{{ route('admin/products') }}" class="btn btn-danger me-2">Voltar</a>
+                                    <a href="{{ route('admin/products') }}" class="bg-trevoso hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-2" style="text-decoration: none;">Voltar</a>
                                 </p>
                                 <p>
-                                    <button class="btn btn-warning">Editar</button>
+                                    <button class="d-flex items-center bg-rosa hover:bg-rosaH text-white font-bold py-2 px-4 rounded-md h-9">Editar</button>
                                 </p>
                             </div>
                         </div>

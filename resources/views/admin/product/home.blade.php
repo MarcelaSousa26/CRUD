@@ -11,7 +11,7 @@
                 <div class="p-6 text-gray-900">
                     <div class="d-flex align-items-center justify-content-between">
                         <h1 class="mb-0">Lista de Produtos</h1>
-                        <a href="{{ route('admin/products/create') }}" class="btn btn-info">Adicionar Produtos</a>
+                        <a href="{{ route('admin/products/create') }}" class="btn btn-info text-white">Adicionar Produtos</a>
                     </div>
                     <hr />
                     @if(Session::has('success'))
@@ -20,7 +20,7 @@
                     </div>
                     @endif
                     <table class="table table-hover hover:bg-rosa">
-                        <thead class="table-secondary">
+                        <thead class="table-info">
                             <tr>
                                 <th>ID</th>
                                 <th>Nome</th>
@@ -38,9 +38,9 @@
                                 <td class="align-middle">{{ $product->price }}</td>
                                 <td class="align-middle">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a href="{{ route('admin/products/edit', ['id'=>$product->id]) }}" type="button"  class="bg-rosa hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Editar</a>
+                                        <a href="{{ route('admin/products/edit', ['id'=>$product->id]) }}" type="button"  class="bg-rosa hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-1" style="text-decoration: none;">Editar</a>
 
-                                        <a href="{{ route('admin/products/delete', ['id'=>$product->id]) }}" type="button" class="bg-rosa hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Deletar</a>
+                                        <a href="{{ route('admin/products/delete', ['id'=>$product->id]) }}" type="button" class="bg-trevoso hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md" style="text-decoration: none;">Deletar</a>
                                     </div>
                                 </td>
                             </tr>
