@@ -15,7 +15,11 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
+        colors: {
+            'rosa':'#a16207',
+          }
     },
 
     plugins: [forms],
+
 };

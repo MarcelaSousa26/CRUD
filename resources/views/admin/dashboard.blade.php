@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("Você fez login com sucesso!") }}
-                    <p><a href="products" class="btn btn-primary mt-1">Produtos</a></p>
+                    <p><a href="products" class="btn btn-info mt-1">Produtos</a></p>
                 </div>
             </div>
         </div>

@@ -38,7 +38,7 @@
                                 <td class="align-middle">{{ $product->price }}</td>
                                 <td class="align-middle">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <a href="{{ route('admin/products/edit', ['id'=>$product->id]) }}" type="button" class="btn btn-secondary me-1 rounded">Editar</a>
+                                        <a href="{{ route('admin/products/edit', ['id'=>$product->id]) }}" type="button" class="btn btn-warning me-1 rounded">Editar</a>
                                         <a href="{{ route('admin/products/delete', ['id'=>$product->id]) }}" type="button" class="btn btn-danger rounded">Deletar</a>
                                     </div>
                                 </td>

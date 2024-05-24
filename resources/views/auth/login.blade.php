@@ -5,8 +5,13 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
+        <div class="shrink-0 flex items-center justify-center m-4">
+            <a href="{{ route('dashboard') }}">
+                <x-application-logo class="block h-20 w-auto fill-current text-gray-800 " />
+            </a>
+        </div>
         <!-- Email Address -->
-        <div>
+        <div class="mt-5">
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
@@ -32,16 +37,27 @@
             </label>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
+        <div class="flex items-center justify-center mt-4 mb-4">
+            <x-primary-button class="ms-3">
+                {{ __('Entrar') }}
+            </x-primary-button>
+        </div>
+
+        <div class="flex items-center justify-center mb-4">
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
                     {{ __('Esqueceu sua senha?') }}
                 </a>
             @endif
-
-            <x-primary-button class="ms-3">
-                {{ __('Entrar') }}
-            </x-primary-button>
         </div>
+
+        <div class="flex items-center justify-center">
+            @if (Route::has('register'))
+                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">
+                    {{ __('Registrar uma nova conta') }}
+                </a>
+            @endif
+        </div>
+
     </form>
 </x-guest-layout>
