@@ -16,7 +16,12 @@ export default {
             },
         },
         colors: {
-            'rosa':'#a16207',
+            'bege':'#F5DEB3',
+            'begeE':'#DEB887',
+            'branco':'#F8F8FF',
+            'rosa':'#FF69B4',
+            'rosaH': '#DB7093',
+            'trevoso':'#800000',
           }
     },
 
